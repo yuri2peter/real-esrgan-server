@@ -1,0 +1,53 @@
+{
+  "name": "real-esrgan-server",
+  "version": "1.0.0",
+  "description": "超分辨率算法的本地web服务。提供webAPI调用real-esrgan的windows便携版进行图片超分。",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon --exec 'npm start' --watch src --ext ts,js,json --watch .env.local",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuri2peter/real-esrgan-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuri2peter/real-esrgan-server/issues"
+  },
+  "homepage": "https://github.com/yuri2peter/real-esrgan-server#readme",
+  "dependencies": {
+    "@koa/cors": "^4.0.0",
+    "@next/env": "^12.3.1",
+    "@yuri2/exec-shell": "^0.2.0",
+    "@yuri2/markdown-parser": "^1.0.0",
+    "axios": "^1.1.2",
+    "fs-extra": "^10.1.0",
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-csrf": "^5.0.1",
+    "koa-router": "^12.0.0",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.21",
+    "lokijs": "^1.5.12",
+    "md5": "^2.3.0",
+    "nanoid": "^3.3.4",
+    "socket.io": "^4.5.3"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/koa": "^2.13.5",
+    "@types/koa__cors": "^3.3.0",
+    "@types/koa-csrf": "^5.0.0",
+    "@types/koa-router": "^7.4.4",
+    "@types/koa-static": "^4.0.2",
+    "@types/lodash": "^4.14.186",
+    "@types/lokijs": "^1.5.7",
+    "@types/md5": "^2.3.2",
+    "@types/node": "^18.8.5",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1"
+  }
+}
