@@ -26,6 +26,8 @@ npm ci
 npm start
 ```
 
+> 需要 Windows + 独立显卡 + git bash
+
 ## API
 
 ```js
